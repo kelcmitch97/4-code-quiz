@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,66 @@
     <title>Coding Quiz Challenge</title>
     <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
+
 <body>
-    
+
     <!-- Header with high scores and timer -->
     <header>
-        <h3 class="page-highscores">
-            View high scores <!-- does this need to be a nav link?-->
-        </h3>
-
-        <h3>
-            Timer <!-- need to set up this timer -->
-        </h3>
+        <section>
+            <h3 class="page-highscores">
+                View high scores
+                <!-- does this need to be a nav link?-->
+            </h3>
+        </section>
+        <section>
+            <h3 id="timer">
+                Time: 0
+                <!-- need to set up this timer -->
+            </h3>
+        </section>
     </header>
 
     <main class="quiz-content">
+        <div class="first-page-wrapper">
+            <div class="page-title">
+                <h2>Coding Quiz Challenge</h2>
+            </div>
+            <div class="first-page-content">
+                <p class="page-text">
+                    Try to answer the following code-related questions within the time limit. <br>
+                    Keep in mind that incorrect answers will penalize your score/time <br>
+                    by ten seconds!
+                </p>
 
-        <button clas="start-btn" id="start-quiz" type="button">
-            Start Quiz
-        </button>
+                <button clas="start-btn" id="start-quiz-button" type="button">
+                    Start Quiz
+                </button>
+            </div>
+        </div>
+
+        <!-- Section to hold quiz questions  -->
+        <section class="quiz" id="quiz">
+            <h2 id="title">
+
+            </h2>
+            <ol id="question-list">
+                
+            </ol>
+        </section>
+
+        <!-- Section to show quiz results  -->
+        <section class="quiz-results" id="quiz-results">
+
+        </section>
+
+        <!-- Highscores  -->
+        <section>
+
+        </section>
+
     </main>
 
     <script src="./Assets/js/script.js"></script>
 </body>
+
 </html>

@@ -30,20 +30,37 @@ main {
     height: 400px;
 }
 
-.quiz-content {
+.first-page-wrapper {
     display: flex;
-    width: 100%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 300px;
 }
 
+.page-title {
+    font-size: 30px;
+    padding: 15px;
+}
+
+.page-text {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.first-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* Start Quiz Button */
-#start-quiz {
+#start-quiz-button {
     background-color: var(--dark-purple);
     color: white;
     padding: 10px;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 15px;
+    justify-content: center;
 }
 
 
